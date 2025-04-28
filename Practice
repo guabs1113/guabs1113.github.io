@@ -1,0 +1,16 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Website</title>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>My First Website</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, excepturi voluptates harum culpa possimus eum incidunt animi totam aliquam impedit sed doloribus dolores voluptatibus repudiandae eius error quaerat placeat eaque?</p>
+        </div>
+        </div>
+    </body>
+    </html>
