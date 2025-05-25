@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIKO MILANO Inventory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+            background-color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #D8A7B1;
+            text-align: center;
+        }
+
+        th {
+            background-color: #F8C6D3;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FFEFF3;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #FFF7F9;
+        }
+
+        .header-row th {
+            background-color: #F4A7B9;
+            font-size: 1.2em;
+            color: #333;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+        }
+
+       form {
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #D8A7B1;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #888;
+        }
+
+        input[type="submit"] {
+            all: unset;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr class="header-row">
+            <th colspan="6">INVENTORY SYSTEMS</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Supplier</th>
+            <th>Date</th>
+            <th>Image</th>
+        </tr>
+
+        <tr>
+            <td>30001</td>
+            <td>3D Hydra Lipgloss (Pink)</td>
+            <td>1200</td>
+            <td rowspan="6">KIKO MILANO</td>
+            <td rowspan="2">2025-05-14</td>
+            <td rowspan="6">
+                <img src="kiko.jpeg" alt="KIKO Lip Gloss" style="width: 200px; height: auto; border-radius: 10px; display: block; margin: 0 auto;">
+            </td>
+        </tr>
+        <tr>
+            <td>30002</td>
+            <td>3D Hydra Lipgloss (Rosewood)</td>
+            <td>4500</td>
+        </tr>
+
+        <tr>
+            <td>30003</td>
+            <td>Unlimited Double Touch (Red)</td>
+            <td>950</td>
+            <td rowspan="2">2025-05-15</td>
+        </tr>
+        <tr>
+            <td>30004</td>
+            <td>Lip Volume (Clear)</td>
+            <td>1000</td>
+        </tr>
+
+        <tr>
+            <td>30005</td>
+            <td>Jelly Stylo Lipstick</td>
+            <td>1500</td>
+            <td rowspan="2">2025-05-16</td>
+        </tr>
+        <tr>
+            <td>30006</td>
+            <td>Fruit Explosion Lip Oil</td>
+            <td>3000</td>
+        </tr>
+    </table>
+
+    <h2>Contact Us</h2>
+    <form action="#">
+        <ul>
+            <li>
+                <label for="name">Your Name*</label>
+                <input type="text" id="name" name="name" required>
+            </li>
+            <li>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </li>
+            <li>
+                <label for="contact">Contact No.*</label>
+                <input type="text" id="contact" name="contact" required>
+            </li>
+            <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </li>
+        </ul>
+        <p class="note">*required field</p>
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>
