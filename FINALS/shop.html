@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon GO Enhanced</title>
+  <link rel="stylesheet" href="shopstyle.css" />
+</head>
+<body>
+  <button class="shop-button" onclick="toggleShop()">Go to Shop</button>
+
+  <div id="homepage-content">
+    <main class="carousel-wrapper">
+      <button class="carousel-nav prev">◀</button>
+      <div class="carousel" id="carousel">
+        <section class="carousel-slide" id="home">
+          <div class="hero">
+            <div class="bg-map"></div>
+            <div class="pikachu">
+              <img src="./Pokemon-GO-Logo-Free-PNG.png" alt="Pikachu" />
+              <div class="lightning"></div>
+            </div>
+            <div class="download-links">
+              <a href="#"><img src="./apol2.webp" alt="iOS Download" /></a>
+              <a href="#"><img src="./gogil.webp" alt="Android Download" /></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="carousel-slide" id="login">
+          <form class="form" id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <a href="#">Forgot password?</a>
+            <button type="submit">Login</button>
+            <p>Not registered? <a href="#" id="go-register">Create an account</a></p>
+          </form>
+        </section>
+
+        <section class="carousel-slide" id="register">
+          <form class="form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+            <select required>
+              <option disabled selected>Select Team</option>
+              <option>Team Mystic</option>
+              <option>Team Valor</option>
+              <option>Team Instinct</option>
+            </select>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="#" id="go-login">Back to Login</a></p>
+          </form>
+        </section>
+
+        <section class="carousel-slide" id="about">
+          <div class="bgcontain">
+
+            <div class="title">
+            <img src="https://createkko.github.io/FINALS/Elements/title%20small.png" alt="Behind the Screen Title">
+            </div>
+
+
+            <div id="about-prev">
+            <img src="https://createkko.github.io/FINALS/Elements/prev.png" alt="prev button">
+            </div>
+
+            <div id="about-next">
+            <img src="https://createkko.github.io/FINALS/Elements/next.png" alt="next button">
+            </div>
+
+            <div class="slide-one">
+            <div class="left-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/pokelogo.png" alt="Profile Image">
+            </div>
+            <div class="right-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/titel right.png" alt="title Image">
+                <div class="scroll-text">
+                <p>
+                    For over 25 years, The Pokémon Company International (TPCi) has been devoted to creating moments of joy, 
+                    connection, and discovery for fans across the globe. Our mission is to delight through meaningful experiences that 
+                    inspire friendly competition and shared journeys. 
+
+                    Pokémon has grown into a cultural phenomenon that transcends age, borders, and language. 
+                    We unite Trainers of all kinds through a world filled with incredible creatures and endless adventure. 
+                    At TPCi, we believe in the power of play to bring people together and make the world a better, more connected place.
+                </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="slide-two">
+            <div class="left-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/pokeball.png" alt="Profile Image">
+            </div>
+            <div class="right-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/Goal.png" alt="title Image">
+                <div class="scroll-text">
+                <p>
+                    Our passion for Pokémon goes beyond games and characters. 
+                    It drives a meaningful understanding of the impact we create for teammates, fans, players, and entire communities. 
+                    We're deeply committed to supporting people both within and beyond our organization, through impactful philanthropy, 
+                    inclusive benefits, and strong diversity, equity, and inclusion practices rooted in our culture. 
+
+                    Through our Corporate Social Responsibility initiatives, we strive to bring the magic of Pokémon to life for children and 
+                    families across the globe. Whether it's partnering with equity-driven organizations or creating 
+                    joyful experiences for young Trainers, our mission is clear: to make a lasting, positive difference in the lives we touch.
+                </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="slide-three">
+            <div class="left-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/devlogo.png" alt="Profile Image">
+            </div>
+            <div class="right-panel">
+                <img src="https://createkko.github.io/FINALS/Elements/devs.png" alt="title Image">
+                <div class="scroll-text">
+                <p>
+                    Javin Mayawin, Erika Gualberto, Philip Malayao, and Aiko Tabako, members of the FUntrix, are four student-developers from 
+                    FEU Tech, combining technical expertise with creative energy to support the world of Pokémon GO. 
+                    Fueled by a shared love for innoavation and gameplay, this dynamic team is committed to enhancing user experience, 
+                    optimizing community engagement, and contributing fresh ideas to the evolving Pokémon GO universe. 
+                    
+                    Whether it's through smart design, intuitive features, or real-world integrations, 
+                    their mission is to help Trainers everywhere discover new adventures and build meaningful connections one tap at a time.
+                </p>
+                </div>
+            </div>
+            </div>
+
+            <img src="https://createkko.github.io/FINALS/Elements/bg_about.png" alt="Frame" class="bg-frame">
+        </div>
+        </section>
+
+        <section class="carousel-slide" id="products">
+          <div class="product-grid">
+            <div class="product-card">PokéCoins Pack</div>
+            <div class="product-card">Item Bundle</div>
+            <div class="product-card">Premium Raid Pass</div>
+          </div>
+        </section>
+      </div>
+      <button class="carousel-nav next">▶</button>
+    </main>
+
+    <section class="pokemon-section">
+      <h2>Featured Pokémon</h2>
+      <input type="text" placeholder="Search famous Pokémon" id="search-box" />
+      <div class="pokemon-carousel" id="pokemon-carousel">
+      </div>
+    </section>
+
+    <section class="trainer-id" id="trainer-id">
+      <h2>Here is your Trainer ID</h2>
+      <p id="trainer-name">Name: --</p>
+      <p id="trainer-level">Level: --</p>
+      <p id="trainer-team">Team: --</p>
+      <p id="trainer-coins">PokéCoins: --</p>
+    </section>
+  </div>
+
+  <div id="shop-content" class="shop-section">
+    <header class="shop-header">
+      <div class="shop-logo">Pokémon GO Shop</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active-tab" onclick="switchTab('shop')">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="cart-panel" style="display:none; background:#fff; padding:2rem; margin:1rem auto; width:80%; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:12px;">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> ₱<span id="cart-total">0.00</span></p>
+      <button onclick="checkout()" style="background:#2a75bb;color:#fff;padding:10px 20px;border:none;border-radius:10px;cursor:pointer;">Checkout</button>
+    </div>
+
+    <div class="sub-tabs">
+      <button onclick="showCategory('tickets')">Ticket Bundles</button>
+      <button onclick="showCategory('items')">Items</button>
+      <button onclick="showCategory('coins')">PokéCoins</button>
+      <button onclick="showCategory('bundles')">Daily Bundles</button>
+      <button class="cart-icon-btn" onclick="toggleCart()">🛒 <span id="cart-count">0</span></button>
+    </div>
+
+    <main>
+      <section id="coins" class="category active">
+        <div class="products">
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="250 Coins">
+            <h3>110 PokéCoins</h3>
+            <p>₱125.00</p>
+            <button onclick="event.stopPropagation(); addToCart('250 PokéCoins', 125)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="600 Coins">
+            <h3>600 PokéCoins</h3>
+            <p>₱150.00</p>
+            <button onclick="event.stopPropagation(); addToCart('600 PokéCoins', 150)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="1300 Coins">
+            <h3>1,300 PokéCoins</h3>
+            <p>₱290.00</p>
+            <button onclick="event.stopPropagation(); addToCart('1,300 PokéCoins', 290)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="1300 Coins">
+            <h3>2,700 PokéCoins</h3>
+            <p>₱590.00</p>
+            <button onclick="event.stopPropagation(); addToCart('2,700 PokéCoins', 590)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="1300 Coins">
+            <h3>5,600 PokéCoins</h3>
+            <p>₱1,199.00</p>
+            <button onclick="event.stopPropagation(); addToCart('5,600 PokéCoins', 1199)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/PokeCoin.jpg" alt="1300 Coins">
+            <h3>15,500 PokéCoins</h3>
+            <p>₱3,000.00</p>
+            <button onclick="event.stopPropagation(); addToCart('15,500 PokéCoins', 3000)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="bundles" class="category">
+        <div class="products">
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/Mystery.jpg" alt="Bundle 1">
+            <h3>Starter Bundle</h3>
+            <p>₱199.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Starter Bundle', 199)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tickets" class="category">
+        <div class="products">
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/ticket.png" alt="Ticket">
+            <h3>Quaxly Community Day Ultra Ticket</h3>
+            <p>₱149.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Quaxly Community Day Ultra Ticket', 149)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/ticket.png" alt="Ticket">
+            <h3>Water Festival Ultra Ticket</h3>
+            <p>₱149.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Water Festival Ultra Ticket', 149)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/ticket.png" alt="Ticket">
+            <h3>G-MAX Lapras Max Battle Day Ultra Ticket</h3>
+            <p>₱149.00</p>
+            <button onclick="event.stopPropagation(); addToCart('G-MAX Lapras Max Battle Day Ultra Ticket', 149)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="items" class="category">
+        <div class="products">
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/lucky.jpg" alt="Item">
+            <h3>Lucky Egg Pack</h3>
+            <p>₱149.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Lucky Egg Pack', 149)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/starpiece.png" alt="Item">
+            <h3>Star Piece</h3>
+            <p>₱179.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Star Piece', 179)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/raidpass.png" alt="Item">
+            <h3>Remote Raid Pass</h3>
+            <p>₱99.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Remote Raid Pass', 99)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/storage.png" alt="Item">
+            <h3>Pokémon Storage</h3>
+            <p>₱99.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Pokémon Storage', 99)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/item bag.jpg" alt="Item">
+            <h3>Item Bag</h3>
+            <p>₱59.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Item Bag', 59)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/egg incubator.jpg" alt="Item">
+            <h3>Egg Incubator</h3>
+            <p>₱99.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Egg Incubator', 99)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/superegg.png" alt="Item">
+            <h3>Super Egg Incubator</h3>
+            <p>₱99.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Super Egg Incubator', 99)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/maxrevive.png" alt="Item">
+            <h3>Max Revive</h3>
+            <p>₱59.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Max Revive', 59)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/premium-battle-pass.png" alt="Item">
+            <h3>Premium Battle Pass</h3>
+            <p>₱99.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Premium Battle Pass', 99)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/max-particle-pack.png" alt="Item">
+            <h3>Max Particle Pack</h3>
+            <p>₱220.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Max Particle Pack', 220)">Add to Cart</button>
+          </div>
+          <div class="shop-product-card" onclick="showDetails(this)">
+            <img src="/image/max-mushrooms.png" alt="Item">
+            <h3>Max Mushroom</h3>
+            <p>₱299.00</p>
+            <button onclick="event.stopPropagation(); addToCart('Max Mushroom', 299)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="item-modal" style="display:none;" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button onclick="closeModal()" style="position:absolute; top:10px; right:10px; background:#ccc; border:none; border-radius:50%; width:30px; height:30px; cursor:pointer;">&times;</button>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="">
+        <p id="modal-price"></p>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <footer class="shop-footer">
+      <p>© 2025 Pokémon. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="jsscript.js"></script>
+</body>
+</html>
