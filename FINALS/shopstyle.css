@@ -34,7 +34,10 @@ body {
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(to bottom right, #111, #1f1f1f);
+  position: relative;
   padding: 2rem;
+  background: #fff;
+  overflow: hidden;
 }
 
 .carousel-nav {
@@ -625,6 +628,8 @@ body {
     justify-content: center;
     z-index: 1;
     transform: rotate(-5deg);
+    flex: 1 1 40%;
+    max-width: 500px;
 }
 
 .left-panel img {
@@ -632,6 +637,10 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  
 }
 
 .scroll-text {
@@ -649,14 +658,15 @@ body {
     pointer-events: none;
     z-index: 1;
     width: 135%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     top: 141px;
     right: -187px;
+    height: auto;
 }
 
-.slide-one, .slide-two, .slide-three {
+.slide-one, .slide-two {
     position: absolute; 
     top: 0;
     left: 0;
@@ -673,6 +683,19 @@ body {
     pointer-events: auto;
     z-index: 2;
 }
+
+.slide-three {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+      background: #fefbd8;
+      border-radius: 1rem;
+      position: relative;
+    }
 
 .fade-out {
     opacity: 0;
